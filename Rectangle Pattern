@@ -1,0 +1,54 @@
+Outputs: 
+
+
+Program to create the rectangle pattern.
+Enter the number of rows : 4
+Enter the number of columns : 6
+******
+******
+******
+******
+
+
+Program to create the rectangle pattern.
+Enter the number of rows : 8
+Enter the number of columns : 3
+***
+***
+***
+***
+***
+***
+***
+***
+
+
+
+
+
+
+Code: 
+
+#include <iostream>
+using namespace std;
+
+int main () {
+    //Declaring variables
+    int rows, columns;
+
+    //Taking Inputs
+    cout<<"Program to create the rectangle pattern."<<endl;
+    cout<<"Enter the number of rows : ";
+    cin>>rows;
+    cout<<"Enter the number of columns : ";
+    cin>>columns;
+ 
+    //Printing Pattern
+    for(int i=1; i<=rows; i++) {
+        for(int j=1; j<=columns; j++) {
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+    return 0;
+}
