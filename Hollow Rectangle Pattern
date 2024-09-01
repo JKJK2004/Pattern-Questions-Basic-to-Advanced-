@@ -1,0 +1,71 @@
+Outputs:
+
+Program to print hollow rectangle pattern
+Enter the number of rows : 4
+Enter the number of columns : 8
+* * * * * * * *
+*             *
+*             *
+* * * * * * * *
+
+Program to print hollow rectangle pattern
+Enter the number of rows : 9
+Enter the number of columns : 3
+* * *
+*   *
+*   *
+*   *
+*   *
+*   *
+*   *
+*   *
+* * *
+
+Program to print hollow rectangle pattern
+Enter the number of rows : 7
+Enter the number of columns : 5
+* * * * *
+*       *
+*       *
+*       *
+*       *
+*       *
+* * * * *
+
+
+
+
+Code:
+
+#include <iostream>
+using namespace std;
+
+int main () {
+    //Variable Declaration
+    int rows,columns;
+    
+    //Taking Input
+    cout<<"Program to print hollow rectangle pattern"<<endl;
+    cout<<"Enter the number of rows : ";
+    cin>>rows;
+    cout<<"Enter the number of columns : ";
+    cin>>columns;
+
+    //Displaying Output
+    for(int i=1; i<=rows; i++){ 
+        for(int j=1; j<=columns; j++) {
+            if(i==1||i==rows) {
+                cout<<"*"<<" ";
+            }
+            else{
+                if(j==1||j==columns){
+                    cout<<"*"<<" ";
+                }
+                else {
+                    cout<<"  ";
+                }
+            }
+        }
+        cout<<"\n";
+    }
+}
